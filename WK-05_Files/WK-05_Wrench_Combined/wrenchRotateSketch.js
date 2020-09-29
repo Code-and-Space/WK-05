@@ -67,59 +67,8 @@ let rect03 = {
   radius: 10
 }
 
-
-
-// function setup() {
-//   createCanvas(800, 800);
-//   rectMode(CENTER)
-//   angleMode(DEGREES);
-  // for (let i = 0; i < wrenchRotateElements.length - 1; i++) {
-  //   wrenchRotate[i] = new WrenchRotate(wrenchRotateElements[i]);
-  // }
-// }
-
-// function draw() {
-//   background(255);
-//   noStroke();
-
-  // for (let i = 0; i < wrenchRotateElements.length - 1; i++) {
-  //   wrenchRotate[i].displayCircle();
-  //   wrenchRotate[i].diagramCircle();
-  //   wrenchRotate[i].displayRect();
-  //   wrenchRotate[i].diagramRect();
-  // }
-
-  //bottom black circle
-  // displayCircle(circ01)
-  // diagramCircle(circ01);
-  //
-  // //black handle rectangle
-  // displayRect(rect01);
-  // diagramRect(rect01);
-  //
-  // //bottom white circle
-  // displayCircle(circ02)
-  // diagramCircle(circ02);
-  //
-  // //white thin handle part
-  // displayRect(rect02)
-  // diagramRect(rect02);
-  //
-  // //wrench head circle
-  // displayCircle(circ03)
-  // diagramCircle(circ03);
-  //
-  // //angled wrench head
-  // displayRect(rect03)
-  // diagramRect(rect03);
-
-  // speed = speed + 0.25;
-// }
-
 class WrenchRotate {
   constructor(incomingShape) {
-    // this.incomingCircle = incomingCircle;
-    // this.incomingBox = incomingBox;
     this.incomingShape = incomingShape;
   }
   displayCircle() {
@@ -130,7 +79,7 @@ class WrenchRotate {
       translate(this.incomingShape.transX, this.incomingShape.transY);
       rotate(this.incomingShape.speed);
       ellipse(this.incomingShape.ellipseX, this.incomingShape.ellipseY, this.incomingShape.diameter, this.incomingShape.diameter);
-      this.incomingShape.speed = this.incomingShape.speed + 0.25;
+      this.incomingShape.speed = this.incomingShape.speed + 0.15+(abs((sin(this.incomingShape.speed/2))));
       pop();
     }
   }
@@ -158,7 +107,7 @@ class WrenchRotate {
         rotate(this.incomingShape.speed);
         rect(this.incomingShape.boxX, this.incomingShape.boxY, this.incomingShape.width, this.incomingShape.height, this.incomingShape.radius);
         pop()
-        this.incomingShape.speed = this.incomingShape.speed + 0.25;
+        this.incomingShape.speed = this.incomingShape.speed + 0.15+(abs((sin(this.incomingShape.speed/2))));
       } else {
         fill(this.incomingShape.color);
         noStroke();
