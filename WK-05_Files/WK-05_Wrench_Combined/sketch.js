@@ -27,7 +27,7 @@ function draw() {
   text('This is not a wrench.', width/2, height-20);
 
   push();
-  translate(0, 200);
+  translate(0, 0);
   scale(0.5);
   for (let i = 0; i < wrenchElements.length; i++) {
     wrench[i].drawCircle();
