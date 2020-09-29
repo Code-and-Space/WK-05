@@ -36,7 +36,7 @@ let box02 = {
   color: 255,
   transX: 400,
   transY: 470,
-  speedX: -1,
+  speedX: -1.5,
   speedY: -0.5,
   boxX: 0,
   boxY: 0,
@@ -48,7 +48,7 @@ let circle03 = {
   color: 0,
   transX: 400, // these are translate functions
   transY: 250, // these are translate functions
-  speedX: -1,
+  speedX: -1.75,
   speedY: .5,
   ellipseX: 0, // these are ellipse functions
   ellipseY: 0, // these are ellipse functions
@@ -59,7 +59,7 @@ let box03 = {
   color: 255,
   transX: 380,
   transY: 220,
-  speedX: -1,
+  speedX: 1.5,
   speedY: -0.25,
   boxX: 0,
   boxY: 0,
