@@ -2,7 +2,7 @@ let circle01 = {
   color: 0,
   transX: 400, // these are translate functions
   transY: 600, // these are translate functions
-  speedX: 2,
+  speedX: -3,
   speedY: 2,
   ellipseX: 0, // these are ellipse functions
   ellipseY: 0, // these are ellipse functions
@@ -60,7 +60,7 @@ let box03 = {
   transX: 380,
   transY: 220,
   speedX: -1,
-  speedY: -0.5,
+  speedY: -0.25,
   boxX: 0,
   boxY: 0,
   boxWidth: 60,
