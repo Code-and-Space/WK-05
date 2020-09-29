@@ -69,60 +69,8 @@ let box03 = {
   rotateAngle: 151,
 }
 
-
-//
-// function setup() {
-//   createCanvas(800, 800);
-//   rectMode(CENTER)
-//   angleMode(DEGREES);
-//   // for (let i = 0; i < wrenchElements.length - 1; i++) {
-//   //   wrench[i] = new WrenchMove(wrenchElements[i]);
-//   // }
-// }
-//
-// function draw() {
-//   background(255);
-//   noStroke();
-//
-//   // for (let i = 0; i < wrenchElements.length - 1; i++) {
-//   //   wrench[i].drawCircle();
-//   //   wrench[i].tracingObject();
-//   //   wrench[i].drawBox();
-//   //   wrench[i].tracingBoxObject();
-//   // }
-//
-//
-//   //bottom black circle
-//
-//   // drawCircle(circle01);
-//   // tracingObject(circle01);
-//   //
-//   // noStroke()
-//   // //black handle rectangle
-//   // drawBox(box01);
-//   // tracingBoxObject(box01);
-//   //
-//   // //bottom white circle
-//   // drawCircle(circle02);
-//   // tracingObject(circle02);
-//   //
-//   // //white thin handle part
-//   // drawBox(box02);
-//   // tracingBoxObject(box02);
-//   //
-//   // //wrench head circle
-//   // drawCircle(circle03);
-//   // tracingObject(circle03);
-//   //
-//   // //angled wrench head
-//   // drawAngledBox(box03);
-//   // tracingAngledBox(box03);
-// }
-
 class WrenchMove {
   constructor(incomingShape) {
-    // this.incomingCircle = incomingCircle;
-    // this.incomingBox = incomingBox;
     this.incomingShape = incomingShape;
   }
   drawCircle() {
